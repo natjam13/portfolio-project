@@ -107,8 +107,31 @@ p {
     padding: 120px 60px;
 }
 
+nav {
+    padding: 20px 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin-left: 15px;
+    line-height: 42px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color:#272142;
+    transition: all 150ms ease-in-out;
+}
+
+
+nav a:hover ,nav li.active a {
+    color: var(--branding-color);
+}
+
 @media (max-width: 900px) {
-    h1 {
+    h1 {         
         font-size: 44px;
         line-height: 56px;
     }
